@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "secret-santa"
+version = "0.1.0"
+description = ""
+authors = ["Konstantin Oellers"]
+readme = "README.md"
+packages = [{ include = "secret_santa" }]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.104.1"
+uvicorn = "^0.24.0.post1"
+
+[tool.poetry.scripts]
+serve = "secret_santa.main:serve"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
